@@ -1,7 +1,7 @@
 0x03. Python - Data Structures: Lists, Tuples
 =============================================
-
 -   By Chere Lemma
+
 In this project, I understand and practiced the list data structures in python 
 
 Resources
