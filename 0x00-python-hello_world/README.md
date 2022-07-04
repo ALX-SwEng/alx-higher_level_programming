@@ -160,7 +160,7 @@ Quiz questions
 ```
 >>> print(f"{98} Battery street")
 ```
-  - [] 98 Battery street
+  - [x] 98 Battery street
   - [] f"98 Battery street"
   - [] 9 Battery street
   - [] 8 Battery street
@@ -171,7 +171,7 @@ Quiz questions
 ```
  - [] “98 Battery street, San Francisco”
  - [] 8 Battery street, San
- - [] 98 Battery street, San Francisco
+ - [x] 98 Battery street, San Francisco
  - [] San Francisco Battery street, 98
 
 ##### Question #4: What does this command line print?
@@ -181,7 +181,7 @@ Quiz questions
 ```
   - [] P
   - [] n
-  - [] o
+  - [x] o
   - [] h
 
 ##### Question #5: What does this command line print?
@@ -189,7 +189,7 @@ Quiz questions
 >>> a = "Python is cool"
 >>> print(a[0:6])
 ```
-  - [] Python
+  - [x] Python
   - [] Pytho
   - [] Python is
   - [] Python is cool
@@ -200,7 +200,7 @@ Quiz questions
 >>> print(a[:6])
 ```
   - [] Pytho
-  - [] Python
+  - [x] Python
   - [] Python is
   - [] is cool
 
@@ -212,7 +212,7 @@ Question #7: What does this command line print?
  - [] Python i
  - [] Python is
  - [] cool
- - [] is cool
+ - [x] is cool
 
 ##### Question #8: What does this command line print?
 ```
@@ -223,17 +223,17 @@ Question #7: What does this command line print?
  - [] nohtyP
  - [] Python
  - [] si
- - [] is
+ - [x] is
 
 ##### Question #9: What does this command line print?
 ```
 >>> a = "Python is cool"
 >>> print(a[-2])
 ```
- - [] ol
- - [] l
- - [] o
- - [] Nothing
+ -[] ol
+ -[] l
+ -[x] o
+ -[] Nothing
 
 
 Tasks
