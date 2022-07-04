@@ -160,7 +160,7 @@ Question #2: What does this command line print?
 ```
 >>> print(f"{98} Battery street")
 ```
- [] 98 Battery street
+[] 98 Battery street
  [] f"98 Battery street"
  [] 9 Battery street
  [] 8 Battery street
@@ -169,10 +169,10 @@ Question #3: What does this command line print?
 ```
 >>> print(f"{98} Battery street, {'San Francisco'}")
 ```
- [] “98 Battery street, San Francisco”
- [] 8 Battery street, San
- [] 98 Battery street, San Francisco
- [] San Francisco Battery street, 98
+[] “98 Battery street, San Francisco”
+[] 8 Battery street, San
+[] 98 Battery street, San Francisco
+[] San Francisco Battery street, 98
 
 Question #4: What does this command line print?
 ```
