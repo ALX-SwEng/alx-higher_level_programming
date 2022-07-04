@@ -98,7 +98,7 @@ More Info
 *Note*: you do not need to understand lists yet.
 
 ```
-Quiz questions
+## Quiz questions
 ```
 ##### Question #0: What do these lines print?
 ```
