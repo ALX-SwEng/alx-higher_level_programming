@@ -143,18 +143,18 @@ Quiz questions
 ```
 
 Question #0: Who created Python?
- [] Julien Barbier
- [] Yukihiro Matsumoto
- [x] Guido van Rossum
+ - [] Julien Barbier
+ -  [] Yukihiro Matsumoto
+ - [x] Guido van Rossum
 
 Question #1: What does this command line print?
 ```
 >>> print("Holberton school")
 ```
- [] Holberton
- [] “Holberton school”
- [x] Holberton school
- [] ‘Holberton school’
+ - [] Holberton
+ - [] “Holberton school”
+ - [x] Holberton school
+ - [] ‘Holberton school’
 
 Question #2: What does this command line print?
 ```
