@@ -1,5 +1,6 @@
 0x01. Python - if/else, loops, functions
 ========================================
+-   By Chere Lemma
 
 In this project, I demonstrate conditionals and loops in Python by using `if`, `if ... else`, `break`, `continue`, `pass`, and `range` statements with `while` and `for` loops. Moreover, I practiced writing user defined (my own) Python functions while learning about scope of variables, tracebacks, and arithmetic operators.
 
@@ -21,10 +22,7 @@ Prototypes for functions written in this project:
 | `102-magic_calculation.py` | `def magic_calculation(a, b, c):`                       |
 
 ## Tasks :page_with_curl:
-0x01. Python - if/else, loops, functions
 ========================================
-
--   By Guillaume
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/233/code.png)
 
