@@ -142,12 +142,12 @@ Quiz questions
 --------------
 ```
 
-Question #0: Who created Python?
+##### Question #0: Who created Python?
  - [] Julien Barbier
- -  [] Yukihiro Matsumoto
+ - [] Yukihiro Matsumoto
  - [x] Guido van Rossum
 
-Question #1: What does this command line print?
+##### Question #1: What does this command line print?
 ```
 >>> print("Holberton school")
 ```
@@ -156,86 +156,86 @@ Question #1: What does this command line print?
  - [x] Holberton school
  - [] ‘Holberton school’
 
-Question #2: What does this command line print?
+##### Question #2: What does this command line print?
 ```
 >>> print(f"{98} Battery street")
 ```
-[] 98 Battery street
- [] f"98 Battery street"
- [] 9 Battery street
- [] 8 Battery street
+  - [] 98 Battery street
+  - [] f"98 Battery street"
+  - [] 9 Battery street
+  - [] 8 Battery street
 
-Question #3: What does this command line print?
+##### Question #3: What does this command line print?
 ```
 >>> print(f"{98} Battery street, {'San Francisco'}")
 ```
-[] “98 Battery street, San Francisco”
-[] 8 Battery street, San
-[] 98 Battery street, San Francisco
-[] San Francisco Battery street, 98
+ - [] “98 Battery street, San Francisco”
+ - [] 8 Battery street, San
+ - [] 98 Battery street, San Francisco
+ - [] San Francisco Battery street, 98
 
-Question #4: What does this command line print?
+##### Question #4: What does this command line print?
 ```
 >>> a = "Python is cool"
 >>> print(a[4])
 ```
- [] P
- [] n
- [] o
- [] h
+  - [] P
+  - [] n
+  - [] o
+  - [] h
 
-Question #5: What does this command line print?
+##### Question #5: What does this command line print?
 ```
 >>> a = "Python is cool"
 >>> print(a[0:6])
 ```
- [] Python
- [] Pytho
- [] Python is
- [] Python is cool
+  - [] Python
+  - [] Pytho
+  - [] Python is
+  - [] Python is cool
 
-Question #6: What does this command line print?
+##### Question #6: What does this command line print?
 ```
 >>> a = "Python is cool"
 >>> print(a[:6])
 ```
- [] Pytho
- [] Python
- [] Python is
- [] is cool
+  - [] Pytho
+  - [] Python
+  - [] Python is
+  - [] is cool
 
 Question #7: What does this command line print?
 ```
 >>> a = "Python is cool"
 >>> print(a[7:])
 ```
- [] Python i
- [] Python is
- [] cool
- [] is cool
+ - [] Python i
+ - [] Python is
+ - [] cool
+ - [] is cool
 
-Question #8: What does this command line print?
+##### Question #8: What does this command line print?
 ```
 >>> a = "Python is cool"
 >>> print(a[7:-5])
 ```
- [] on
- [] nohtyP
- [] Python
- [] si
- [] is
+ - [] on
+ - [] nohtyP
+ - [] Python
+ - [] si
+ - [] is
 
-Question #9: What does this command line print?
+##### Question #9: What does this command line print?
 ```
 >>> a = "Python is cool"
 >>> print(a[-2])
 ```
- [] ol
- [] l
- [] o
- [] Nothing
+ - [] ol
+ - [] l
+ - [] o
+ - [] Nothing
 
-```
+
 Tasks
 -----
 
