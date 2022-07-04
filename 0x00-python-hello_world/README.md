@@ -230,10 +230,10 @@ Question #7: What does this command line print?
 >>> a = "Python is cool"
 >>> print(a[-2])
 ```
- -[] ol
- -[] l
- -[x] o
- -[] Nothing
+ - [] ol
+ - [] l
+ - [x] o
+ - [] Nothing
 
 
 Tasks
