@@ -21,7 +21,6 @@ Prototypes for functions written in this project:
 | `101-remove_char_at.py`    | `def remove_char_at(str, n):`                           |
 | `102-magic_calculation.py` | `def magic_calculation(a, b, c):`                       |
 
-## Tasks :page_with_curl:
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/233/code.png)
 
@@ -199,8 +198,8 @@ for i in range(2, 10, 2):
 - [x] 2 4 6 8
 
 
-Tasks
------
+## Tasks :page_with_curl:
+-------------------------
 
 ### 0\. Positive anything is better than negative nothing
 
