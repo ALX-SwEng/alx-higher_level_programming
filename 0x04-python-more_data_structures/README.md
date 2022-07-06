@@ -29,11 +29,15 @@ Prototypes for functions written in this project:
 | `102-complex_delete.py`        | `def complex_delete(a_dictionary, value):`                                                                |
 | `103-python.c`                 | <ul><li>`void print_python_list(PyObject *p);`</li><li>`void print_python_bytes(PyObject *p);`</li></ul> |
 
+
+Project Info
+------------
 -   By Guillaume
 -   Weight: 1
 -   Ongoing project - started 11-24-2021, must end by 11-25-2021 (in about 4 hours) - you're done with 0% of tasks.
 -   Checker was released at 11-24-2021 12:00 PM
 -   QA review fully automated.
+
 
 Resources
 ---------
@@ -46,6 +50,7 @@ Resources
 **man or help**:
 
 -   `python3`
+
 
 Learning Objectives
 -------------------
@@ -66,6 +71,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 -   What is a lambda function
 -   What are the map, reduce and filter functions
 
+
 Requirements
 ------------
 
@@ -79,6 +85,7 @@ Requirements
 -   Your code should use the pycodestyle (version 2.7.*)
 -   All your files must be executable
 -   The length of your files will be tested using `wc`
+
 
 Quiz questions
 --------------
@@ -206,12 +213,12 @@ Nothing
  - [x] Hello Holberton School 
  - [] 98
 
+
 Tasks
 -----
 
 ### 0\. Squared simple
-
-mandatory
+[mandatory]
 
 Write a function that computes the square value of all integers of a matrix.
 
@@ -253,8 +260,7 @@ guillaume@ubuntu:~/0x04$
 -   File: `0-square_matrix_simple.py`
 
 ### 1\. Search and replace
-
-mandatory
+[mandatory]
 
 Write a function that replaces all occurrences of an element by another in a new list.
 
@@ -289,8 +295,7 @@ guillaume@ubuntu:~/0x04$
 -   File: `1-search_replace.py`
 
 ### 2\. Unique addition
-
-mandatory
+[mandatory]
 
 Write a function that adds all unique integers in a list (only once for each integer).
 
@@ -319,8 +324,7 @@ guillaume@ubuntu:~/0x04$
 -   File: `2-uniq_add.py`
 
 ### 3\. Present in both
-
-mandatory
+[mandatory]
 
 Write a function that returns a set of common elements in two sets.
 
@@ -350,8 +354,7 @@ guillaume@ubuntu:~/0x04$
 -   File: `3-common_elements.py`
 
 ### 4\. Only differents
-
-mandatory
+[mandatory]
 
 Write a function that returns a set of all elements present in only one set.
 
@@ -381,8 +384,7 @@ guillaume@ubuntu:~/0x04$
 -   File: `4-only_diff_elements.py`
 
 ### 5\. Number of keys
-
-mandatory
+[mandatory]
 
 Write a function that returns the number of keys in a dictionary.
 
@@ -411,8 +413,7 @@ guillaume@ubuntu:~/0x04$
 -   File: `5-number_keys.py`
 
 ### 6\. Print sorted dictionary
-
-mandatory
+[mandatory]
 
 Write a function that prints a dictionary by ordered keys.
 
@@ -447,8 +448,7 @@ guillaume@ubuntu:~/0x04$
 -   File: `6-print_sorted_dictionary.py`
 
 ### 7\. Update dictionary
-
-mandatory
+[mandatory]
 
 Write a function that replaces or adds key/value in a dictionary.
 
@@ -509,8 +509,7 @@ guillaume@ubuntu:~/0x04$
 -   File: `7-update_dictionary.py`
 
 ### 8\. Simple delete by key
-
-mandatory
+[mandatory]
 
 Write a function that deletes a key in a dictionary.
 
@@ -567,8 +566,7 @@ guillaume@ubuntu:~/0x04$
 -   File: `8-simple_delete.py`
 
 ### 9\. Multiply by 2
-
-mandatory
+[mandatory]
 
 Write a function that returns a new dictionary with all values multiplied by 2
 
@@ -613,8 +611,7 @@ guillaume@ubuntu:~/0x04$
 -   File: `9-multiply_by_2.py`
 
 ### 10\. Best score
-
-mandatory
+[mandatory]
 
 Write a function that returns a key with the biggest integer value.
 
@@ -650,8 +647,7 @@ guillaume@ubuntu:~/0x04$
 -   File: `10-best_score.py`
 
 ### 11\. Multiply by using map
-
-mandatory
+[mandatory]
 
 Write a function that returns a list with all values multiplied by a number without using any loops.
 
@@ -688,8 +684,7 @@ guillaume@ubuntu:~/0x04$
 -   File: `11-multiply_list_map.py`
 
 ### 12\. Roman to Integer
-
-mandatory
+[mandatory]
 
 **Technical interview preparation**:
 
@@ -741,8 +736,7 @@ guillaume@ubuntu:~/0x04$
 -   File: `12-roman_to_int.py`
 
 ### 13\. Weighted average!
-
-#advanced
+[advanced]
 
 Write a function that returns the weighted average of all integers tuple `(<score>, <weight>)`
 
@@ -773,8 +767,7 @@ guillaume@ubuntu:~/0x04$
 -   File: `100-weight_average.py`
 
 ### 14\. Squared by using map
-
-#advanced
+[advanced]
 
 Write a function that computes the square value of all integers of a matrix using `map`
 
@@ -819,8 +812,7 @@ guillaume@ubuntu:~/0x04$
 -   File: `101-square_matrix_map.py`
 
 ### 15\. Delete by value
-
-#advanced
+[advanced]
 
 Write a function that deletes keys with a specific value in a dictionary.
 
@@ -873,8 +865,7 @@ guillaume@ubuntu:~/0x04$
 -   File: `102-complex_delete.py`
 
 ### 16\. CPython #1: PyBytesObject
-
-#advanced
+[advanced]
 
 Create two C functions that print some basic info about Python lists and Python bytes objects.
 
