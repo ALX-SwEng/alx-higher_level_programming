@@ -10,7 +10,7 @@ def text_indentation(text):
 
     Raises:
         TypeError exception: If the text is not string.
-
+== '.' or text[i] == '?' or text[i] == ':'
     Returns:
         None.
 """
@@ -19,8 +19,8 @@ def text_indentation(text):
 
     i = 0
     while i < len(text):
-        print(text[i])
-        #if text[i] == '.' or text[i] == '?' or text[i] == ':':
-         #   print("\n")
+        print(text[i], end="")
+        if text[i] in [".?:"]:
+            print("\n")
         i +=1
         
