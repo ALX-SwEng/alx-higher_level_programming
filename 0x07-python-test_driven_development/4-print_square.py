@@ -2,9 +2,6 @@
 
 """Defines a print_square function."""
 
-from logging import exception
-
-
 def print_square(size):
     """Prints a square with the character #
 
