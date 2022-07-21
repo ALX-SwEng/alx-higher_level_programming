@@ -1,19 +1,31 @@
+
 #!/usr/bin/python3
 
-"""Define a class Square."""
+def matrix_divided(matrix, div):
+    """Divide all elements of a matrix.
 
+    Args:
+        matrix (list): A list of lists of ints or floats.
+        div (int/float): The divisor.
+    Raises:
+        TypeError: If the matrix contains non-numbers.
+        TypeError: If the matrix contains rows of different sizes.
+        TypeError: If div is not an int or float.
+        ZeroDivisionError: If div is 0.
+    Returns:
+        A new matrix representing the result of the division.
+    """
 
-class Square:
-    """Represent a square."""
+    if (not isinstance(matrix, list) or matrix == [] or 
+            not all (isinstance(ele, int) or isinstance(ele, float)) 
+                for ele in [num for row in matrix for num in row]):
+        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+    if (not all (len(row) == len[matrix[0]]) for row in matrix):
+        raise TypeError("Each row of the matrix must have the same size")
 
-    def __init__(self, size=0):
-        """Initialize a new Square.
-
-        Args:
-            size (int): The size of the new square.
-        """
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
-        self.__size = size
+    if ((not isinstance(matrix, int) and not isinstance(matrix, float))):
+        raise TypeError("div must be a number")
+    if div == 0:
+        raise ZeroDivisionError ("division by zero")
+    
+    return ([list(map(lambda x: round(x / div, 2), row)) for row in matrix])
