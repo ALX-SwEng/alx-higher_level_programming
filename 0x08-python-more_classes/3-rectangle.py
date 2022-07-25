@@ -42,7 +42,7 @@ class Rectangle:
     @property
     def height(self):
         """ return height of rectangle """
-        return self._height
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -61,7 +61,7 @@ class Rectangle:
         if value < 0:
             raise ValueError("Height must be >= 0")
 
-        self._height = value
+        self.__height = value
 
     def area(self): 
         """ that returns the rectangle area """
