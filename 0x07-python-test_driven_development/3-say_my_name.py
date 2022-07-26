@@ -3,13 +3,13 @@
 
 
 def say_my_name(first_name, last_name=""):
-    """Print full name as My name is <first name> <last name>.
+    """Print a name.
 
     Args:
-        first_name (str): the first name to print.
-        last_name (str): the last name to print.
+        first_name (str): The first name to print.
+        last_name (str): The last name to print.
     Raises:
-        TypeError: If first name and last name is not string.
+        TypeError: If either of first_name or last_name are not strings.
     """
     if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
