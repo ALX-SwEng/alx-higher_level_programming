@@ -14,7 +14,7 @@ def text_indentation(text):
     Raises:
         TypeError exception: If the text is not string.
     """
-    if not isinstance(text, string): 
+    if not isinstance(text, str): 
         raise TypeError ("text must be a string")
 
     i = 0
@@ -30,5 +30,4 @@ def text_indentation(text):
             while i < len(text) and text[i] == ' ':
                 i += 1
             continue
-
         i += 1
