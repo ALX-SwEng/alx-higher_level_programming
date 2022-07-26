@@ -1,7 +1,7 @@
 
 #!/usr/bin/python3
-
 """Defines a name-printing function."""
+
 
 def say_my_name(first_name, last_name=""):
     """Print full name as My name is <first name> <last name>.
@@ -12,7 +12,6 @@ def say_my_name(first_name, last_name=""):
     Raises:
         TypeError: If first name and last name is not string.
     """
-
     if not (isinstance(first_name, str) and isinstance(last_name, str)):
         raise TypeError("first_name must be a string or last_name must be a string")
 
