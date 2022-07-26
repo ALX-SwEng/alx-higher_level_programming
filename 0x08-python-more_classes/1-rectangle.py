@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Defines a class Rectangle"""
-
+"""Defines a class Rectangle. """
 
 class Rectangle:
     """Represents a rectangle. No body."""
@@ -25,11 +24,10 @@ class Rectangle:
         """ set width of rectangle 
 
         Args:
-            value (int): must be a +ve integer
-
+            value (int): must be a +ve integer.
         Raises:
             TypeError exception: If value is not an integer.
-            ValueError exception: if value is less than zero
+            ValueError exception: if value is less than zero.
         """
 
         if not isinstance (value, int):
