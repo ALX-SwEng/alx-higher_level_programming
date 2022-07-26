@@ -72,12 +72,10 @@ class Rectangle:
         return ("".join(rect))
 
     def __repr__(self):
-        """Return a string representation of the rectangle 
-            to be able to recreate a new instance by using eval().
-        """
+        """Return a string representation of the rectangle."""
         rect = "Rectangle(" + str(self.__width)
         rect += ", " + str(self.__height) + ")"
-        return (eval(rect))
+        return (rect)
 
     def __del__(self):
         """Print a message for every deletion of a Rectangle."""
