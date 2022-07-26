@@ -31,5 +31,6 @@ def text_indentation(text):
                 i += 1
             continue
         i += 1
-        if (text[i] == ' ' and text[i+1] == '\n'):
-            i += 1
+        if i < len(text)-1:
+            if text[i] == ' ' and text[i+1] == '\n':
+                i += 1
