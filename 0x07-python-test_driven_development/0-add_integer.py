@@ -3,7 +3,7 @@
 
 
 def add_integer(a, b=98):
-    """return the sum of two integers. 
+    """return the sum of two integers.
 
     if Float arguments are typecasted to ints before addition is performed.
 
