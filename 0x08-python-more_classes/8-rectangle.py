@@ -93,10 +93,10 @@ class Rectangle:
         """Returns the biggest rectangle based on the area.
 
         Args:
-            reac_1 (Rectangle): The 1st instance of a rectangle
-            rect_2 (Rectangle): The 2nd instance of a rectangle
+            reac_1 (Rectangle): The 1st instance of a rectangle.
+            rect_2 (Rectangle): The 2nd instance of a rectangle.
         Raises:
-            TypeError exception: if either of the instnce (reac_1 and rect_2) not an instance of a rectangle
+            TypeError exception: if either of the instnce (reac_1 and rect_2) not an instance of a rectangle.
         """ 
         if not isinstance (rect_1, Rectangle): 
             raise TypeError("rect_1 must be an instance of Rectangle")
