@@ -62,6 +62,25 @@ class Rectangle:
             return (0)
         return (2*(self.__width + self.__height))
 
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2): 
+        """Returns the biggest rectangle based on the area.
+        
+        Args:
+            reac_1 (Rectangle): The 1st instance of a rectangle
+            rect_2 (Rectangle): The 2nd instance of a rectangle
+        Raises:
+            TypeError exception: if either of the instnce (reac_1 and rect_2) not an instance of a rectangle
+        """ 
+        if not isinstance (rect_1, Rectangle): 
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if not isinstance(rect_2, Rectangle): 
+            raise TypeError("rect_2 must be an instance of Rectangle")
+
+        if rect_1.area() >= rect_2.area():
+            return (rect_1)
+        return (rect_2)
+
     def __str__(self):
         """Return the printable representation of the Rectangle.
 
@@ -87,22 +106,3 @@ class Rectangle:
         """Print a message for every deletion of a Rectangle."""
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
-
-    @staticmethod
-    def bigger_or_equal(rect_1, rect_2): 
-        """Returns the biggest rectangle based on the area.
-        
-        Args:
-            reac_1 (Rectangle): The 1st instance of a rectangle
-            rect_2 (Rectangle): The 2nd instance of a rectangle
-        Raise:
-            TypeError exception: if either of the instnce (reac_1 and rect_2) not an instance of a rectangle
-        """ 
-        if not isinstance (rect_1, Rectangle): 
-            raise TypeError("rect_1 must be an instance of Rectangle")
-        if not isinstance(rect_2, Rectangle): 
-            raise TypeError("rect_2 must be an instance of Rectangle")
-
-        if rect_1.area() >= rect_2.area():
-            return (rect_1)
-        return (rect_2)
