@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-
 """Defines a matrix_divided function."""
+
 
 def matrix_divided(matrix, div):
     """Divide all elements of a matrix.
@@ -28,5 +28,5 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError ("division by zero")
-    
+
     return ([list(map(lambda x: round(x / div, 2), row)) for row in matrix])
