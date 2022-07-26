@@ -2,6 +2,9 @@
 
 """Defines a print_square function."""
 
+import string
+
+
 def text_indentation(text):
     """Prints a text with 2 new lines after each of these characters: ., ? and :
 
@@ -11,8 +14,9 @@ def text_indentation(text):
     Raises:
         TypeError exception: If the text is not string.
     """
-    if not isinstance(text, str): 
-        raise TypeError ("text must be an string")
+    if not isinstance(text, string): 
+        raise TypeError ("text must be a string")
+
     i = 0
     while i < len(text) and text[i] == ' ':
         i += 1
@@ -28,5 +32,5 @@ def text_indentation(text):
             continue
 
         i += 1
-        while i < len(text)-1 and text[i] == ' ' and text[i+1] == ' ':
+        while i < len(text)-1 and text[i] == ' ' and (text[i+1] == ' ' or text[i+1] == '\n'):
             i += 1
