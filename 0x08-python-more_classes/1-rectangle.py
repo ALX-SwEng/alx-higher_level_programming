@@ -22,8 +22,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """Set width of the rectangle
-
+        """Set width of the rectangle.
         Args:
             value (int): must be a +ve integer.
         Raises:
@@ -46,8 +45,7 @@ class Rectangle:
         """Set height of the rectangle 
 
         Args:
-            value (int): must be a +ve integer
-
+            value (int): must be a +ve integer.
         Raises:
             TypeError exception: If value is not an integer.
             ValueError exception: if value is less than zero
