@@ -32,5 +32,3 @@ def text_indentation(text):
             continue
 
         i += 1
-        while i < len(text)-1 and text[i] == ' ' and (text[i+1] == ' ' or text[i+1] == '\n'):
-            i += 1
