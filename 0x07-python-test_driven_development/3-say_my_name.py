@@ -17,7 +17,7 @@ def say_my_name(first_name, last_name=""):
         raise TypeError("last_name must be a string")
 
     if first_name:
-         space = " "
+        space = " "
     if not last_name:
         space = ""
     print("My name is {}{}{}".format(first_name, space, last_name))
