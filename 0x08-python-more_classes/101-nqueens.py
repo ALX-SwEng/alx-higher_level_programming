@@ -86,6 +86,6 @@ if __name__ == "__main__":
         sys.exit(1)
 
     N = sys.argv[1]
-    mat = [['–' for x in range(N)] for y in range(N)]
+    mat = [['-' for x in range(N)] for y in range(N)]
  
     nQueen(mat, 0)
