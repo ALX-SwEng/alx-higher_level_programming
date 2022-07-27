@@ -19,61 +19,38 @@ queen must be placed on the chessboard.
 """
 import sys
 
-# Function to check if two queens threaten each other or not
-def isSafe(mat, r, c):
- 
-    # return false if two queens share the same column
-    for i in range(r):
-        if mat[i][c] == 'Q':
-            return False
- 
-    # return false if two queens share the same `\` diagonal
-    (i, j) = (r, c)
-    while i >= 0 and j >= 0:
-        if mat[i][j] == 'Q':
-            return False
-        i = i - 1
-        j = j - 1
- 
-    # return false if two queens share the same `/` diagonal
-    (i, j) = (r, c)
-    while i >= 0 and j < len(mat):
-        if mat[i][j] == 'Q':
-            return False
-        i = i - 1
-        j = j + 1
- 
-    return True
- 
- 
-def printSolution(mat):
-    for r in mat:
-        print(str(r).replace(',', '').replace('\'', ''))
-    print()
- 
- 
-def nQueen(mat, r):
- 
-    # if `N` queens are placed successfully, print the solution
-    if r == len(mat):
-        printSolution(mat)
-        return
- 
-    # place queen at every square in the current row `r`
-    # and recur for each valid movement
-    for i in range(len(mat)):
- 
-        # if no two queens threaten each other
-        if isSafe(mat, r, i):
-            # place queen on the current square
-            mat[r][i] = 'Q'
- 
-            # recur for the next row
-            nQueen(mat, r + 1)
- 
-            # backtrack and remove the queen from the current square
-            mat[r][i] = '-'
- 
+def is_attack(board, i, j):
+    #checking if there is a queen in row or column
+    for k in range(0,N):
+        if board[i][k]==1 or board[k][j]==1:
+            return True
+    #checking diagonals
+    for k in range(0,N):
+        for l in range(0,N):
+            if (k+l==i+j) or (k-l==i-j):
+                if board[k][l]==1:
+                    return True
+    return False
+
+def N_queen(board, n):
+    #if n is 0, solution found
+    if n==0:
+        return True
+    for i in range(0,N):
+        for j in range(0,N):
+            '''checking if we can place a queen here or not 
+                queen will not be placed if the place is being attacked
+                or already occupied'''
+            if (not(is_attack(board, i,j))) and (board[i][j]!=1):
+                board[i][j] = 1
+                #recursion
+                #wether we can put the next queen with this arrangment or not
+                if N_queen(board, n-1)==True:
+                    return True
+                board[i][j] = 0
+
+    return False
+
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: nqueens N")
@@ -86,6 +63,11 @@ if __name__ == "__main__":
         sys.exit(1)
 
     N = sys.argv[1]
-    mat = [['-' for x in range(N)] for y in range(N)]
- 
-    nQueen(mat, 0)
+
+    #chessboard
+    #NxN matrix with all elements 0
+    board = [[0]*N for _ in range(N)]
+
+    N_queen(board, N)
+    for i in board:
+        print (i)
