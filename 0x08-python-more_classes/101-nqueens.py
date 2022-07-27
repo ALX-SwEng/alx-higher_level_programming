@@ -51,10 +51,7 @@ def nqueens(queens, n, x):
             if (x == n - 1):  # accepts the solution
                 print(queens)
             else:
-                nqueens(queens, n, x + 1)  # moves on to next x value to continue
-
-    # start the recursive process at x = 0
-    
+                nqueens(queens, n, x + 1)  # moves on to next x value to continue    
 
 if __name__ == "__main__":
 
@@ -73,7 +70,8 @@ if __name__ == "__main__":
     # initialize the answer list
     for i in range(n):
         queens.append([i, None])
-    
+
+    # start the recursive process at x = 0
     nqueens(queens, n, 0)
     
 
