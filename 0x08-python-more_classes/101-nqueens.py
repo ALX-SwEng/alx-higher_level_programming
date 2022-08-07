@@ -2,7 +2,7 @@
 """
     Module containing functions to search for solutions to N-queens problem.
 """
-
+import sys
 
 def all_possible(n=4):
     """ Function to find all possible solutions by placing the first queen on
@@ -154,17 +154,14 @@ def top_right(matrix, y, x, n):
 
 
 if __name__ == "__main__":
-    from sys import argv
-    if len(argv) != 2:
+    if len(sys.argv) != 2:
         print("Usage: nqueens N")
-        exit(1)
-    try:
-        n = int(argv[1])
-    except:
+        sys.exit(1)
+    if sys.argv[1].isdigit() is False:
         print("N must be a number")
-        exit(1)
-    if n < 4:
+        sys.exit(1)
+    if int(sys.argv[1]) < 4:
         print("N must be at least 4")
-        exit(1)
+        sys.exit(1)
 
     all_possible(n)
