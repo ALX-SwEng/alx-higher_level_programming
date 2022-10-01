@@ -6,18 +6,17 @@ The function prints a text with 2 new lines after each of
 these characters: ., ? and :
 """
 
-
 def text_indentation(text):
-    """adds paragraph after `.`, `:` and `?`
+    """Prints a text with 2 new lines after these characters: ., ? and :"""
 
-    Args:
-        text (str)
-    """
-    if not isinstance(text, str):
-        raise TypeError('text must be a string')
-
-    for symbol in '.:?':
-        text = text.replace(symbol, '{}\n'.format(symbol))
-    lines = text.splitlines()
-    for index, line in enumerate(lines):
-        print(line.strip(), end='' if index == len(lines) - 1 else '\n\n')
+    leng = len(text)
+    i = 0
+    while i < leng:
+        print(text[i], end='')
+        if text[i] in [':', '.', '?']:
+            print('\n\n')
+            if i + 1 == leng:
+                break
+            if i < leng and text[i + 1] == ' ':
+                i += 1
+        i += 1
