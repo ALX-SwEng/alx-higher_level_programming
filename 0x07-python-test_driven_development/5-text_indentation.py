@@ -16,6 +16,7 @@ def text_indentation(text):
     while leng  < len(text):
         if flag == 0:
             if text[leng] == ' ':
+                leng += 1
                 continue
             else:
                 flag = 1
@@ -25,8 +26,10 @@ def text_indentation(text):
                 print()
                 flag = 0
             else:
-                if text[leng] == " " and text[leng+1] == '\n':
+                 if text[leng] == " " and text[leng+1] == '\n':
+                    leng += 1
                     continue;
-                print(a, end="")
-                if a == '\n':
-                    flag = 0
+                print(text[leng], end="")
+                if text[leng] == '\n':
+                    flag = 0               
+            leng += 1
