@@ -1,24 +1,19 @@
-#!/usr/bin/python3
-"""
-This module defines `text_indentation`
-
-The function prints a text with 2 new lines after each of
-these characters: ., ? and :
-"""
-
-
 def text_indentation(text):
-    """splits a text into lines along "?", ":", "." followed by 2 new lines"""
-    if type(text) is not str:
+    """Prit a text with 2 new lines after each characters"""
+
+    if type(text) != str:
         raise TypeError("text must be a string")
-
-    endings = [".", "?", ":"]
-    i = 0
-    while i < len(text) and text[i] == ' ':
-        i += 1
-
-    for i in text:
-        if i in endings:
-            print(f"{i}\n")
-        else:
-            print(i, end="")
+    flag = 0
+    for a in text:
+        if flag == 0:
+            if a == ' ':
+                continue
+            else:
+                flag = 1
+        if flag == 1:
+            if a == '?' or a == '.' or a == ':':
+                print(a)
+                print()
+                flag = 0
+            else:
+                print(a, end="")
