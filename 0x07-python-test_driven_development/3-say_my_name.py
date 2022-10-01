@@ -17,4 +17,4 @@ def say_my_name(first_name, last_name=""):
     space = ""
     if last_name:
         space = " "
-    print(f"My name is {first_name}{space}{last_name}")
+    print(f"My name is {first_name} {space} {last_name}")
