@@ -19,4 +19,4 @@ def say_my_name(first_name, last_name=""):
     space = " "
     if not last_name:
         space = " "
-    print("My name is {} {}".format(first_name, last_name))
+    print('My name is {} {}'.format(first_name, last_name))
