@@ -13,6 +13,10 @@ def text_indentation(text):
         raise TypeError("text must be a string")
 
     endings = [".", "?", ":"]
+    i = 0
+    while i < len(text) and text[i] == ' ':
+        i += 1
+
     for i in text:
         if i in endings:
             print(f"{i}\n")
