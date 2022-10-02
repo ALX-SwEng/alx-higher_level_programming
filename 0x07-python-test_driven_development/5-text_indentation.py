@@ -20,7 +20,7 @@ def text_indentation(text):
         raise TypeError("text must be a string")
     flag = 0
     a = 0
-    for a < len(text):
+    while a < len(text):
         if flag == 0:
             if text[a] == ' ':
                 continue
