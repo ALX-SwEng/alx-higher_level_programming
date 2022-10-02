@@ -6,14 +6,14 @@ Defines MyList that inherits from list
 
 class MyList(list):
     """
-    Defines List
+        This class inherits from list.
+        Attributes:
+        Methods:
+            print_sorted - prints the list in ascending order
     """
-    def __init__(self):
-        """initialise object"""
-        super().__init__()
-
     def print_sorted(self):
-        """Print list.
         """
-
+           prints a list in ascending order.
+        """
         print(sorted(self))
+        
