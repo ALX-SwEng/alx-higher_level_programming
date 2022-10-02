@@ -7,7 +7,7 @@ these characters: ., ? and :
 
 
 def text_indentation(text):
-    """ Function that prints 2 new lines after ".?:" characters
+    """splits a text into lines along "?", ":", "." followed by 2 new lines
     Args:
         text: input string
     Returns:
@@ -18,20 +18,17 @@ def text_indentation(text):
 
     if type(text) is not str:
         raise TypeError("text must be a string")
-
-    c = 0
-    while c < len(text) and text[c] == ' ':
-        c += 1
-
-    while c < len(text):
-        if text[c] == " " and text[c+1] == '\n':
-            continue
-        print(text[c], end="")
-        if text[c] == "\n" or text[c] in ".?:":
-            if text[c] in ".?:":
-                print("\n")
-            c += 1
-            while c < len(text) and text[c] == ' ':
-                c += 1
-            continue
-        c += 1
+    flag = 0
+    for a in text:
+        if flag == 0:
+            if a == ' ':
+                continue
+            else:
+                flag = 1
+        if flag == 1:
+            if a == '?' or a == '.' or a == ':':
+                print(a)
+                print()
+                flag = 0
+            else:
+                print(a, end="")
