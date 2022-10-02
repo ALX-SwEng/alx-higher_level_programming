@@ -1,36 +1,28 @@
 #!/usr/bin/python3
-
-"""Defines a print_square function."""
-
-import string
+"""
+This module defines `text_indentation`
+The function prints a text with 2 new lines after each of
+these characters: ., ? and :
+"""
 
 
 def text_indentation(text):
-    """Prints a text with 2 new lines after each of these characters: ., ? and :
+    """Prit a text with 2 new lines after each characters"""
 
-    Args:
-        text(str): the string to print.
-
-    Raises:
-        TypeError exception: If the text is not string.
-    """
-    if not isinstance(text, str): 
-        raise TypeError ("text must be a string")
-
+    if type(text) != str:
+        raise TypeError("text must be a string")
+    flag = 0
     i = 0
-    while i < len(text) and text[i] == ' ':
-        i += 1
-
     while i < len(text):
-        print(text[i], end="")
-        if text[i] == '\n' or text[i] in ".?:":
-            if text[i] in ".?:":
-                print("\n")
-            i += 1
-            while i < len(text) and text[i] == ' ':
-                i += 1
-            continue
-        i += 1
-        if i < len(text)-1:
-            if text[i] == ' ' and text[i+1] == '\n':
-                i += 1
+        if flag == 0:
+            if text[i] == ' ':
+                continue
+            else:
+                flag = 1
+        if flag == 1:
+            if text[i] == '?' or text[i] == '.' or text[i] == ':':
+                print(text[i])
+                print()
+                flag = 0
+            else:
+                print(text[i], end="")
