@@ -7,22 +7,25 @@ these characters: ., ? and :
 
 
 def text_indentation(text):
-    """Prit a text with 2 new lines after each characters"""
+    """ Function that prints 2 new lines after ".?:" characters
+    Args:
+        text: input string
+    Returns:
+        No return
+    Raises:
+        TypeError: If text is not a string
+    """
 
-    if type(text) != str:
+    if type(text) is not str:
         raise TypeError("text must be a string")
-    flag = 0
-    i = 0
-    while i < len(text):
-        if flag == 0:
-            if text[i] == ' ':
-                continue
-            else:
-                flag = 1
-        if flag == 1:
-            if text[i] == '?' or text[i] == '.' or text[i] == ':':
-                print(text[i])
-                print()
-                flag = 0
-            else:
-                print(text[i], end="")
+
+    s = text[:]
+
+    for d in ".?:":
+        list_text = s.split(d)
+        s = ""
+        for i in list_text:
+            i = i.strip(" ")
+            s = i + d if s is "" else s + "\n\n" + i + d
+
+    print(s[:-3], end="")
