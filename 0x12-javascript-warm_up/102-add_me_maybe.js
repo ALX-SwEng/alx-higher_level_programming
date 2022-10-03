@@ -1,5 +1,5 @@
 #!/usr/bin/node
 
-exports.incrementAndcall = function (number, theFunction) {
+exports.callMeMoby = function (number, theFunction) {
   theFunction(++number);
 };
