@@ -2,7 +2,7 @@
 
 let size = Number(process.argv[2]);
 const width = size;
-if (isNaN(num)) {
+if (isNaN(size)) {
   console.log('Missing size');
 } else {
   while (size > 0) {
