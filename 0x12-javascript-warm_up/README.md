@@ -94,8 +94,39 @@ $ sudo npm install semistandard --global
 
 Quiz questions
 --------------
+##### Question #0: Does Javascript have String as a native datatype?
+ - [x] Yes
+ - [] No
 
-Show
+##### Question #1: Does Javascript have Array as a native datatype?
+ - [x] Yes
+ - [] No
+
+##### Question #2: Does Javascript have Set as a native datatype?
+ - [] Yes
+ - [x] No
+
+##### Question #3: Does Javascript have Dictionary as a native datatype?
+ - [] Yes
+ - [x] No
+
+Tips:
+Everything is Object and Object type in Javascript is powerful.
+
+##### Question #4: What does let mean? (please check all true answers)
+ - [x] It’s the keyword to define a variable in the local scope
+ - [] It’s the keyword to define a global variable
+ - [x] It’s the keyword to define a variable with optionally initializing it to a value
+ - [] It’s the keyword to define a constant variable
+ - [x] It’s the keyword to define a variable that can be re-assign during the execution
+
+##### Question #5: What does const mean? (please check all true answers)
+ - [x] It’s the keyword to define a variable in the local scope
+ - [] It’s the keyword to define a global variable
+ - [] It’s the keyword to define a variable with optionally initializing it to a value
+ - [x] It’s the keyword to define a constant variable
+ - [] It’s the keyword to define a variable that can be re-assign during the execution
+
 
 Tasks
 -----
