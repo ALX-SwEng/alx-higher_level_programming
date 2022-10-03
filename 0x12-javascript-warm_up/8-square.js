@@ -6,9 +6,11 @@ if (isNaN(num)) {
   console.log('Missing size');
 } else {
   while (num > 0) {
+    let row = '';
     for (let i = 1; i < width; ++i) {
-      console.log('x');
+      row += 'X';
     }
+    console.log(row);
     --num;
   }
 }
