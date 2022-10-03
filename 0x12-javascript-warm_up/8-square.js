@@ -1,16 +1,16 @@
 #!/usr/bin/node
 
-let num = Number(process.argv[2]);
-const width = num;
+let size = Number(process.argv[2]);
+const width = size;
 if (isNaN(num)) {
   console.log('Missing size');
 } else {
-  while (num > 0) {
+  while (size > 0) {
     let row = '';
-    for (let i = 1; i < width; ++i) {
+    for (let i = 1; i <= size; ++i) {
       row += 'X';
     }
     console.log(row);
-    --num;
+    --size;
   }
 }
