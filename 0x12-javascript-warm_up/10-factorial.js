@@ -9,4 +9,4 @@ function factorial (n) {
 }
 
 const num = Number(process.argv[2]);
-console.log(factorial(mum));
+console.log(factorial(num));
