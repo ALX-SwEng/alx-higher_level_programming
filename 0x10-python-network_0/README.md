@@ -101,8 +101,9 @@ http://www.google.com/apply
 - [] 22
 
 Question #4: What will be the port number requested by this URL?
-
+```
 afp://www.google.com/access_in_port_543
+```
 - [] 543
 - [] 80
 - [x] 548
